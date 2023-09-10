@@ -22,7 +22,7 @@ h3 {
 }
 
 .resume-container {
-    width: 800px; 
+    width: 1000px; 
     margin: 0 auto; 
     background-image: url('https://png.pngtree.com/background/20210706/original/pngtree-roses-romantic-vintage-paper-background-picture-image_27531.jpg'); 
     background-size: cover;
@@ -41,12 +41,3 @@ section img.right-image {
     width: 200px; 
     height: auto; 
 }
-
-.right-image + p {
-    clear: right;
-}
-
-section p {
-    font-size: 18px; 
-}
-
