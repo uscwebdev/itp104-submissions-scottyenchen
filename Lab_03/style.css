@@ -27,7 +27,8 @@ h3 {
     background-image: url('https://png.pngtree.com/background/20210706/original/pngtree-roses-romantic-vintage-paper-background-picture-image_27531.jpg'); 
     background-size: cover;
     background-repeat: no-repeat; 
-    background-color: #fff; 
+    box-sizing: border-box;
+
 }
 
 section h2 {
