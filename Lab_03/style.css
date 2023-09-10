@@ -29,3 +29,23 @@ h3 {
     background-repeat: no-repeat; 
     background-color: #fff; 
 }
+
+section h2 {
+    font-size: 24px;
+}
+
+section img.right-image {
+    float: right;
+    margin-left: 10px; 
+    width: 200px; 
+    height: auto; 
+}
+
+.right-image + p {
+    clear: right;
+}
+
+section p {
+    font-size: 18px; 
+}
+
