@@ -32,9 +32,10 @@ section {
 }
 
 img {
+    max-width: 50%; 
+    height: auto; 
     float: right;
-    margin-left: 20px;
-    max-width: 50%;
+    margin-left: 20px; 
 }
 
 footer {
