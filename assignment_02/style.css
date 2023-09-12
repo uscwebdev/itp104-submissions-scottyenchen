@@ -36,6 +36,7 @@ section {
 img {
     max-width: 50%; 
     height: auto; 
+    max-height: 150px;
     float: right;
     margin-left: 20px; 
 }
