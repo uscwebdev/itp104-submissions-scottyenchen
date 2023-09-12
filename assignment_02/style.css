@@ -10,12 +10,13 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    color: white;
+    color: black;
     padding: 100px 0;
 }
 
 h1 {
     font-size: 36px;
+    color: black;
 }
 
 .container {
