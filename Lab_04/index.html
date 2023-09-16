@@ -12,28 +12,12 @@
             max-width: 950px;
             margin: 0 auto;
             padding: 20px;
-        }
-        h1 {
-            color: #000; 
-        }
-        strong {
-            font-weight: bold;
-        }
-        em {
-            font-style: italic;
-        }
-        img {
-            height: 200px;
-            width: auto;
+            display: flex;
         }
         .column {
-            float: left;
-            width: 33.33%; /* Change to 33.33% for three columns */
-            padding: 0 20px; /* Add spacing on both sides of each column */
-            box-sizing: border-box; /* Include padding in column width */
-        }
-        .column:nth-child(3) {
-            border-right: none; /* Remove border from the last column */
+            flex: 1;
+            border: 1px solid #ccc; 
+            padding: 20px; 
         }
         ul {
             list-style-type: none;
@@ -53,11 +37,6 @@
 </head>
 <body>
     <div class="container">
-        <h1>Scott Chen!</h1>
-        <p>
-            Email: <a href="mailto:sychen@usc.edu">sychen@usc.edu</a><br>
-        </p>
-
         <!-- Classes This Semester -->
         <div class="column">
             <h2>Classes This Semester</h2>
@@ -71,7 +50,7 @@
             </ul>
         </div>
 
-        <!-- Favorite Color, Website, and Activity -->
+        <!-- More About Me -->
         <div class="column">
             <h2>More About Me</h2>
             <p>
