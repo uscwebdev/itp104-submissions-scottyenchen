@@ -14,21 +14,19 @@
             margin: 0 auto;
             padding: 30px;
             display: flex;
-            flex-wrap: wrap; 
-        }
-        .header {
-            width: 100%;
-            text-align: center;
+            flex-direction: column;
+            align-items: center;
         }
         .header h1 {
             font-size: 36px;
             color: #000;
         }
         .column {
-            flex: 1;
             border: 1px solid #ccc;
             padding: 30px;
             box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 20px;
         }
         ul {
             list-style-type: none;
@@ -55,28 +53,15 @@
         <div class="header">
             <h1>Scott Chen</h1>
         </div>
-        <p>
-            Email: <a href="mailto:sychen@usc.edu">sychen@usc.edu</a><br>
-        </p>
         <div class="column">
-            <h2>Classes This Semester</h2>
-            <ul>
-                <li>ITP104</li>
-                <li>ITP228</li>
-                <li>ITP256</li>
-                <li>ITP489</li>
-                <li>BUAD425</li>
-                <li>BUAD497</li>
-            </ul>
+            <p>Email: <a href="mailto:sychen@usc.edu">sychen@usc.edu</a></p>
         </div>
 
         <div class="column">
             <h2>More About Me</h2>
-            <p>
-                Favorite Color: <strong>Yellow</strong><br>
-                Favorite Website: <a href="http://itpwebdev.com/fall-2023/itp-104-tth/" target="_blank">ITP 104 course website!</a><br>
-                Favorite Activity: <img src="https://www.ncaa.org/images/2023/4/6/MBB-Ball2.JPG" alt="Basketball"><br>
-            </p>
+            <p>Favorite Color: <strong>Yellow</strong></p>
+            <p>Favorite Website: <a href="http://itpwebdev.com/fall-2023/itp-104-tth/" target="_blank">ITP 104 course website!</a></p>
+            <p>Favorite Activity: <img src="https://www.ncaa.org/images/2023/4/6/MBB-Ball2.JPG" alt="Basketball"></p>
         </div>
 
         <div class="column">
