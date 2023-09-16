@@ -13,20 +13,20 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         .header h1 {
             font-size: 36px;
             color: #000;
         }
+        .section {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 20px;
+        }
         .column {
-            border: 1px solid #ccc;
-            padding: 30px;
-            box-sizing: border-box;
-            width: 100%;
-            margin-bottom: 20px;
+            display: inline-block;
+            vertical-align: top;
+            width: 48%;
+            margin-right: 2%;
         }
         ul {
             list-style-type: none;
@@ -53,41 +53,50 @@
         <div class="header">
             <h1>Scott Chen</h1>
         </div>
-        <div class="column">
+        
+        <div class="section">
+            <h2>Name</h2>
             <p>Email: <a href="mailto:sychen@usc.edu">sychen@usc.edu</a></p>
         </div>
 
-        <div class="column">
-            <h2>More About Me</h2>
-            <p>Favorite Color: <strong>Yellow</strong></p>
-            <p>Favorite Website: <a href="http://itpwebdev.com/fall-2023/itp-104-tth/" target="_blank">ITP 104 course website!</a></p>
-            <p>Favorite Activity: <img src="https://www.ncaa.org/images/2023/4/6/MBB-Ball2.JPG" alt="Basketball"></p>
+        <div class="section">
+            <div class="column">
+                <h2>More About Me</h2>
+                <p>Favorite Color: <strong>Yellow</strong></p>
+                <p>Favorite Website: <a href="http://itpwebdev.com/fall-2023/itp-104-tth/" target="_blank">ITP 104 course website!</a></p>
+                <p>Favorite Activity: <img src="https://www.ncaa.org/images/2023/4/6/MBB-Ball2.JPG" alt="Basketball"></p>
+            </div>
 
-            <h2>Classes This Semester</h2>
-            <ul>
-                <li>ITP104</li>
-                <li>ITP228</li>
-                <li>ITP256</li>
-                <li>ITP489</li>
-                <li>BUAD425</li>
-                <li>BUAD497</li>
-            </ul>
-
+            <div class="column">
+                <h2>Classes This Semester</h2>
+                <ul>
+                    <li>ITP104</li>
+                    <li>ITP228</li>
+                    <li>ITP256</li>
+                    <li>ITP489</li>
+                    <li>BUAD425</li>
+                    <li>BUAD497</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="column">
-            <h2>Completed Assignments</h2>
-            <ul>
-                <li><a href="https://uscwebdev.github.io/itp104-submissions-scottyenchen/assgnment_01/" target="_blank">Assignment 1</a></li>
-                <li><a href="https://uscwebdev.github.io/itp104-submissions-scottyenchen/assignment_02/" target="_blank">Assignment 2</a></li>
-            </ul>
+        <div class="section">
+            <div class="column">
+                <h2>Completed Assignments</h2>
+                <ul>
+                    <li><a href="https://uscwebdev.github.io/itp104-submissions-scottyenchen/assgnment_01/" target="_blank">Assignment 1</a></li>
+                    <li><a href="https://uscwebdev.github.io/itp104-submissions-scottyenchen/assignment_02/" target="_blank">Assignment 2</a></li>
+                </ul>
+            </div>
             
-            <h2>Completed Labs</h2>
-            <ul>
-                <li>Lab 1</li>
-                <li><a href="index.html">Lab 2</a></li>
-                <li><a href="https://uscwebdev.github.io/itp104-submissions-scottyenchen/Lab_03/" target="_blank">Lab 3</a></li>
-            </ul>
+            <div class="column">
+                <h2>Completed Labs</h2>
+                <ul>
+                    <li>Lab 1</li>
+                    <li><a href="index.html">Lab 2</a></li>
+                    <li><a href="https://uscwebdev.github.io/itp104-submissions-scottyenchen/Lab_03/" target="_blank">Lab 3</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
