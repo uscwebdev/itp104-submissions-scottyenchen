@@ -15,11 +15,18 @@
             display: flex;
             flex-wrap: wrap; 
         }
+        .header {
+            width: 100%;
+            text-align: center;
+        }
+        .header h1 {
+            color: #000;
+        }
         .column {
             flex: 1;
-            border: 1px solid #ccc; 
-            padding: 20px; 
-            box-sizing: border-box; 
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
         }
         ul {
             list-style-type: none;
@@ -37,13 +44,15 @@
         }
         img {
             max-width: 100%;
-            height: auto; 
+            height: auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Scott Chen!</h1>
+        <div class="header">
+            <h1>Scott Chen</h1>
+        </div>
         <p>
             Email: <a href="mailto:sychen@usc.edu">sychen@usc.edu</a><br>
         </p>
