@@ -45,9 +45,15 @@ h1 {
     margin-bottom: 20px;
 }
 
+
+.sidebar figure {
+    margin-bottom: 20px;
+}
+
 .sidebar img {
     max-width: 100%;
-    height: auto;
+    height: auto; 
+    display: block; 
 }
 
 footer {
