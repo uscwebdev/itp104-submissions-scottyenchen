@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order Form</title>
+</head>
+<body>
+    <h1>Restaurant Order Form</h1>
+    <form action="confirmation.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        
+        <label>Choose your dish:</label><br>
+        <input type="radio" id="pizza" name="dish" value="Pizza">
+        <label for="pizza">Pizza</label><br>
+        
+        <input type="radio" id="burger" name="dish" value="Burger">
+        <label for="burger">Burger</label><br>
+        
+        <input type="radio" id="pasta" name="dish" value="Pasta">
+        <label for="pasta">Pasta</label><br><br>
+        
+        <label>Select toppings:</label><br>
+        <input type="checkbox" id="cheese" name="toppings[]" value="Cheese">
+        <label for="cheese">Cheese</label><br>
+        
+        <input type="checkbox" id="pepperoni" name="toppings[]" value="Pepperoni">
+        <label for="pepperoni">Pepperoni</label><br>
+        
+        <input type="checkbox" id="mushrooms" name="toppings[]" value="Mushrooms">
+        <label for="mushrooms">Mushrooms</label><br><br>
+        
+        <label for="drink">Choose a drink:</label>
+        <select id="drink" name="drink">
+            <option value="Coke">Coke</option>
+            <option value="Pepsi">Pepsi</option>
+            <option value="Sprite">Sprite</option>
+        </select><br><br>
+        
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any special requests or comments"></textarea><br><br>
+        
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I accept the Terms & Conditions</label><br><br>
+        
+        <input type="submit" value="Place Order">
+        <input type="reset" value="Clear Form">
+    </form>
+</body>
+</html>
