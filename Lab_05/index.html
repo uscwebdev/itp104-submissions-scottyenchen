@@ -6,7 +6,7 @@
     <title>Restaurant Order Form</title>
 </head>
 <body>
-    <h1>Restaurant Order Form</h1>
+    <h1>ITP 104 Restaurant!</h1>
     <form action="confirmation.html" method="get">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
@@ -21,16 +21,16 @@
         <input type="radio" id="pasta" name="dish" value="Pasta">
         <label for="pasta">Pasta</label><br><br>
         
-        <label>Select toppings:</label><br>
-        <input type="checkbox" id="cheese" name="toppings[]" value="Cheese">
-        <label for="cheese">Cheese</label><br>
+        <label for="sides">Sides:</label><br>
+        <input type="checkbox" id="salad" name="sides[]" value="Salad">
+        <label for="salad">Salad</label><br>
         
-        <input type="checkbox" id="pepperoni" name="toppings[]" value="Pepperoni">
-        <label for="pepperoni">Pepperoni</label><br>
+        <input type="checkbox" id="fries" name="sides[]" value="Fries">
+        <label for="fries">Fries</label><br>
         
-        <input type="checkbox" id="mushrooms" name="toppings[]" value="Mushrooms">
-        <label for="mushrooms">Mushrooms</label><br><br>
-        
+        <input type="checkbox" id="wings" name="sides[]" value="Wings">
+        <label for="wings">Wings</label><br><br>
+
         <label for="drink">Choose a drink:</label>
         <select id="drink" name="drink">
             <option value="Coke">Coke</option>
