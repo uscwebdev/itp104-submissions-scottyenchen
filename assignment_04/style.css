@@ -33,19 +33,19 @@ header {
     right: 5px;
 }
 
-.event-birthday {
+.Birthday {
     background-color: #ffcccb; 
     font-weight: bold;
 }
 
-.event-MLK {
+.MLK {
     background-image: url('img/MLK.jpg'); /* Replace with your holiday 1 image path */
     background-size: cover;
     color: white;
     font-weight: bold;
 }
 
-.event-Lunar {
+.Lunar {
     background-image: url('img/Lunar_New_Year.jpg'); /* Replace with your holiday 2 image path */
     background-size: cover;
     color: white;
