@@ -3,8 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>January 2023 Calendar</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    
+    header {
+        background-image: url('img/header-image.jpeg'); 
+        border: 1px solid #000;
+    	height: 300px;
+    	background-size: cover;
+    	background-position: center;
+    	text-align: center;
+    	color: white;
+    	text-shadow: 0px 0px 10px #000;
+    	font-size: 1.5em;
+    	line-height: 300px
+    }
+    
+    .calendar {
+        width: 80%; 
+        border-collapse: collapse;
+        margin-top: 20px; 
+    }
+    
+    .calendar th, .calendar td {
+        border: 1px solid #ccc;
+        text-align: center;
+        padding: 10px;
+        width: 14.28%; 
+    }
+    
+    .calendar .date {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+    
+    .Birthday {
+        background-image: url('img/birthday.jpeg');
+        background-position: center;
+    	background-size: cover;
+        background-color: white; 
+        font-weight: bold;
+    }
+    
+    .MLK {
+        background-image: url('img/MLK.jpeg');
+        background-position: center;
+    	background-size: cover;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .Lunar {
+        background-image: url('img/Lunar_New_Year.jpeg'); 
+        background-position: center;
+        background-size: cover;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .greyed {
+    	color: lightgrey;
+    }
+    </style>
 </head>
 <body>
     <header>
