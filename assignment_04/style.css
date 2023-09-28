@@ -34,19 +34,20 @@ header {
 }
 
 .Birthday {
+    background-image: url('img/birthday.jpeg');
     background-color: #ffcccb; 
     font-weight: bold;
 }
 
 .MLK {
-    background-image: url('img/MLK.jpg'); /* Replace with your holiday 1 image path */
+    background-image: url('img/MLK.jpeg');
     background-size: cover;
     color: white;
     font-weight: bold;
 }
 
 .Lunar {
-    background-image: url('img/Lunar_New_Year.jpg'); /* Replace with your holiday 2 image path */
+    background-image: url('img/Lunar_New_Year.jpeg'); 
     background-size: cover;
     color: white;
     font-weight: bold;
