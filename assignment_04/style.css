@@ -1,1 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-image: url('img/header-image.jpg'); 
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.calendar {
+    width: 80%; 
+    border-collapse: collapse;
+    margin-top: 20px; 
+}
+
+.calendar th, .calendar td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+    width: 14.28%; 
+}
+
+.calendar .date {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.event-birthday {
+    background-color: #ffcccb; 
+    font-weight: bold;
+}
+
+.event-MLK {
+    background-image: url('img/MLK.jpg'); /* Replace with your holiday 1 image path */
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+}
+
+.event-Lunar {
+    background-image: url('img/Lunar_New_Year.jpg'); /* Replace with your holiday 2 image path */
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+}
 
