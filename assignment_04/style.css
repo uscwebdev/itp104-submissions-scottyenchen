@@ -62,3 +62,8 @@ header {
     font-weight: bold;
 }
 
+.greyed {
+	color: lightgrey;
+}
+
+
