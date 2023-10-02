@@ -1,31 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <title>Photo Gallery</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .photo-gallery {
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            opacity: 0.7;
+            }
+
+
+        .caption {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: opacity 0.3s;
+        }
+
+        .photo-gallery:hover {
+        	opacity: 1.0;
+        }
+
+        .photo {
+            width: 500px;
+            height: auto;
+        }
+
+        .photo + caption {
+        	text-align: center;
+        	visibility: hidden;
+        }
+
+        .photo-gallery:hover caption {
+        	visibility: visible;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Cars</h1>
     <div class="photo-gallery">
         <div class="photo">
             <img src="img/cars.jpg" alt="Image 1">
-            <div class="caption">Caption for Image 1</div>
+            <div class="caption">Cars Meet</div>
         </div>
         <div class="photo">
             <img src="img/cars1.jpg" alt="Image 2">
-            <div class="caption">Caption for Image 2</div>
+            <div class="caption">Bugatti</div>
         </div>
         <div class="photo">
             <img src="img/mercedes.jpg" alt="Image 3">
-            <div class="caption">Caption for Image 3</div>
+            <div class="caption">Mercedes AMG GT</div>
         </div>
         <div class="photo">
             <img src="img/mercedes1.jpg" alt="Image 4">
-            <div class="caption">Caption for Image 4</div>
+            <div class="caption">Mercedes E class Interior</div>
         </div>
         <div class="photo">
             <img src="img/porsche1.jpg" alt="Image 5">
-            <div class="caption">Caption for Image 5</div>
+            <div class="caption">Porsche Panamera</div>
         </div>
     </div>
 </body>
