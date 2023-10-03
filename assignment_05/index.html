@@ -22,15 +22,26 @@
             color: white;
         }
 
-        .photo-gallery {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .photo {
-            flex: 0 0 calc(33.33% - 20px);
-            margin-bottom: 20px;
+        .sidebar {
+            flex: 1;
+            background-color: #f5f5f5;
+            border-right: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 2;
+            background-color: #fff0e6;
+            padding: 20px;
         }
 
         .photo img {
@@ -39,10 +50,15 @@
         }
 
         .photo .caption {
+            display: none;
             text-align: center;
             padding: 10px;
             background-color: #f5f5f5;
             border: 1px solid #ccc;
+        }
+
+        .photo:hover .caption {
+            display: block;
         }
 
         nav ul {
@@ -75,27 +91,53 @@
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
-    <main class="photo-gallery">
-        <div class="photo">
-            <img src="img/cars.jpg" alt="Image 1">
-            <div class="caption">Cars Meet</div>
+    <main class="container">
+        <div class="sidebar">
+            <figure class="photo">
+                <img src="img/cars1.jpg" alt="Car Image 1">
+                <figcaption>Bugatti La Voiture Noire, worth $19 million</figcaption>
+            </figure>
+            <figure class="photo">
+                <img src="img/mercedes.jpg" alt="Car Image 2">
+                <figcaption>Mercedes AMG GT</figcaption>
+            </figure>
         </div>
-
-        <div class="photo">
-            <img src="img/cars1.jpg" alt="Image 2">
-            <div class="caption">Bugatti</div>
-        </div>
-        <div class="photo">
-            <img src="img/mercedes.jpg" alt="Image 3">
-            <div class="caption">Mercedes AMG GT</div>
-        </div>
-        <div class="photo">
-            <img src="img/mercedes1.jpg" alt="Image 4">
-            <div class="caption">Mercedes E class Interior</div>
-        </div>
-        <div class="photo">
-            <img src="img/porsche1.jpg" alt="Image 5">
-            <div class="caption">Porsche Panamera</div>
+        <div class="content">
+            <section>
+                <h2>About My Hobby</h2>
+                <p>
+                    I've been passionate about cars since my early days, and this passion has only grown stronger with time. Cars, with their unique designs and engineering, have always fascinated me. From understanding their mechanics to the thrill of driving them, my love for cars is more than just a hobby—it's a lifelong passion.
+                </p>
+                <p>
+                    In this page, I will introduce you to two iconic car brands: Mercedes Benz and Porsche.
+                </p>
+            </section>
+            <section>
+                <h2>Mercedes Benz</h2>
+                <p>
+                    Mercedes-Benz, a German automobile manufacturer, is renowned for its luxury vehicles, commercial vehicles, and high-performance sports cars. With a history dating back to the late 19th century, Mercedes-Benz has established itself as a symbol of quality and innovation.
+                </p>
+                <img src="img/mercedes1.jpg" alt="Mercedes Image">
+                <p>
+                    Mercedes-Benz offers a diverse range of models, including the C-Class, E-Class, S-Class, GLC, GLE, GLS, and the sporty AMG line, along with the iconic G-Class.
+                </p>
+                <ul>
+                    <li><a href="https://www.mbusa.com/en/home" target="_blank">Mercedes Website</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Porsche</h2>
+                <img src="img/porsche1.jpg" alt="Porsche Image">
+                <p>
+                    Porsche, another renowned German automaker, is celebrated for its high-performance sports cars and SUVs. Models like the 911, 718, Panamera, Cayenne, and Macan have solidified Porsche's reputation for excellence.
+                </p>
+                <p>
+                    Porsche cars are not just vehicles; they are a blend of timeless beauty and exhilarating performance. The craftsmanship and engineering behind every Porsche vehicle make it a dream come true for car enthusiasts like me.
+                </p>
+                <ul>
+                    <li><a href="https://www.porsche.com/usa/" target="_blank">Porsche Website</a></li>
+                </ul>
+            </section>
         </div>
     </main>
     <footer>
