@@ -6,24 +6,27 @@
         h1 {
             text-align: center;
         }
-        .clearfloat {
-            clear: both;
-        }
         #main {
+            display: flex;
+            flex-wrap: wrap;
             width: 800px;
-            margin-right: auto;
-            margin-left: auto;
+            margin: 0 auto;
         }
         .image-container {
-            float: left;
-            width: 33.33%;
-            box-sizing: border-box; 
+            flex: 0 0 calc(33.33% - 20px);
+            box-sizing: border-box;
             padding: 10px;
             text-align: center;
+            position: relative;
         }
         img {
-            max-width: 100%; 
+            max-width: 100%;
         }
+        .move {
+            box-shadow: 5px 5px 5px #FFF;
+            position: relative;
+            top: 10px;
+            left: 10px;
         }
     </style>
 </head>
@@ -31,7 +34,7 @@
     <h1>Mercedes Image Puzzle</h1>
     <div id="main">
         <div class="image-container">
-            <img src="img/row-1-column-1.jpg" alt="Image part 1">
+            <img src="img/row-1-column-1.jpg" alt="Image part 1" class="move">
         </div>
         <div class="image-container">
             <img src="img/row-1-column-2.jpg" alt="Image part 2">
@@ -43,12 +46,11 @@
             <img src="img/row-2-column-1.jpg" alt="Image part 4">
         </div>
         <div class="image-container">
-            <img src="img/row-2-column-2.jpg" alt="Image part 5">
+            <img src="img/row-2-column-2.jpg" alt="Image part 5" class="move">
         </div>
         <div class="image-container">
             <img src="img/row-2-column-3.jpg" alt="Image part 6">
         </div>
-        <div class="clearfloat"></div>
     </div>
 </body>
 </html>
