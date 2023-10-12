@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Car Enthusiast - Home</title>
+    <style>
+        header {
+            background-image: url('img/cars.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 50px 0;
+            margin-bottom: 20px;
+        }
 
+        h1 {
+            font-size: 36px;
+            color: white;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #f5f5f5;
+            border-right: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 2;
+            background-color: #fff0e6;
+            padding: 20px;
+        }
+
+        .photo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .photo .caption {
+            display: none;
+            text-align: center;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+        }
+
+        .photo:hover .caption {
+            display: block;
+        }
+
+        .menu-bar {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .menu-bar a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 15px;
+            margin: 0 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        .menu-bar a:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:hover {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Car Enthusiast</h1>
+    </header>
+    <div class="menu-bar">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+    <main class="container">
+        <div class="sidebar">
+            <figure class="photo">
+                <img src="img/cars1.jpg" alt="Car Image 1">
+                <figcaption>Bugatti La Voiture Noire, worth $19 million</figcaption>
+            </figure>
+            <figure class="photo">
+                <img src="img/mercedes.jpg" alt="Car Image 2">
+                <figcaption>Mercedes AMG GT</figcaption>
+            </figure>
+        </div>
+        <div class="content">
+            <section>
+                <h2>About My Hobby</h2>
+                <p>
+                    I've been passionate about cars since my early days, and this passion has only grown stronger with time. Cars, with their unique designs and engineering, have always fascinated me. From understanding their mechanics to the thrill of driving them, my love for cars is more than just a hobby—it's a lifelong passion.
+                </p>
+                <p>
+                    In this page, I will introduce you to two iconic car brands: Mercedes Benz and Porsche.
+                </p>
+            </section>
+            <section>
+                <h2>Mercedes Benz</h2>
+                <p>
+                    Mercedes-Benz, a German automobile manufacturer, is renowned for its luxury vehicles, commercial vehicles, and high-performance sports cars. With a history dating back to the late 19th century, Mercedes-Benz has established itself as a symbol of quality and innovation.
+                </p>
+                <img src="img/mercedes1.jpg" alt="Mercedes Image">
+                <p>
+                    Mercedes-Benz offers a diverse range of models, including the C-Class, E-Class, S-Class, GLC, GLE, GLS, and the sporty AMG line, along with the iconic G-Class.
+                </p>
+                <ul>
+                    <li><a href="https://www.mbusa.com/en/home" target="_blank">Mercedes Website</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Porsche</h2>
+                <img src="img/porsche1.jpg" alt="Porsche Image">
+                <p>
+                    Porsche, another renowned German automaker, is celebrated for its high-performance sports cars and SUVs. Models like the 911, 718, Panamera, Cayenne, and Macan have solidified Porsche's reputation for excellence.
+                </p>
+                <p>
+                    Porsche cars are not just vehicles; they are a blend of timeless beauty and exhilarating performance. The craftsmanship and engineering behind every Porsche vehicle make it a dream come true for car enthusiasts like me.
+                </p>
+                <ul>
+                    <li><a href="https://www.porsche.com/usa/" target="_blank">Porsche Website</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Scott Chen 2023</p>
+    </footer>
+</body>
+</html>
