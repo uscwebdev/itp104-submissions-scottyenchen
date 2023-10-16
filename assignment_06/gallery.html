@@ -1,7 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Organo';
+            src: url('fonts/Organo.ttf') format('truetype');
+        }
+        h1 {
+            font-family: 'Organo', cursive;
+        }
+        nav a, footer p {
+            font-family: 'Pixelify Sans', cursive;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .photo:hover .caption {
+            display: block;
+        }
+    </style>
     <title>Car Enthusiast - Gallery</title>
 </head>
 <body>
@@ -11,7 +50,13 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li class="dropdown">
+                <a href="gallery.html">Gallery</a>
+                <div class="dropdown-content">
+                    <a href="mercedes.html">Mercedes</a>
+                    <a href="porsche.html">Porsche</a>
+                </div>
+            </li>
         </ul>
     </nav>
     <main class="photo-gallery">
@@ -37,23 +82,23 @@
         </div>
         <div class="photo">
             <img src="img/car6.jpg" alt="Car Image 6">
-            <div class="caption">Car Name 5</div>
+            <div class="caption">Car Name 6</div>
         </div>
         <div class="photo">
             <img src="img/car7.jpg" alt="Car Image 7">
-            <div class="caption">Car Name 5</div>
+            <div class="caption">Car Name 7</div>
         </div>
         <div class="photo">
             <img src="img/car8.jpg" alt="Car Image 8">
-            <div class="caption">Car Name 5</div>
+            <div class="caption">Car Name 8</div>
         </div>
         <div class="photo">
             <img src="img/car9.jpg" alt="Car Image 9">
-            <div class="caption">Car Name 5</div>
+            <div class="caption">Car Name 9</div>
         </div>
         <div class="photo">
             <img src="img/car10.jpg" alt="Car Image 10">
-            <div class="caption">Car Name 5</div>
+            <div class="caption">Car Name 10</div>
         </div>
     </main>
     <footer>
