@@ -1,19 +1,7 @@
-@font-face {
-    font-family: "Organo";
-    src: url("fonts/Organo.ttf") format("truetype");
-}
-
-/* Importing Pixelify Sans from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
-
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Pixelify Sans', Arial, sans-serif; 
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Organo', Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 nav ul {
@@ -40,4 +28,110 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+.header {
+    background-image: url('img/cars.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f5f5f5;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+}
+
+.content {
+    flex: 2;
+    background-color: #fff0e6;
+    padding: 20px;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.photo .caption {
+    display: none;
+    text-align: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+}
+
+.photo:hover .caption {
+    display: block;
+}
+
+.menu-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    margin: 0 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.menu-bar a:hover {
+    background-color: white;
+    color: #333;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content a:hover {
+    background-color: white;
+    color: #333;
 }
