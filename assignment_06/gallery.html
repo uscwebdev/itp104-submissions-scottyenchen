@@ -37,6 +37,30 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .photo {
+            flex: 0 0 calc(33.33% - 20px);
+            margin-bottom: 20px;
+        }
+
+        .photo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .photo .caption {
+            display: none;
+            text-align: center;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+        }
+
         .photo:hover .caption {
             display: block;
         }
