@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interview Experience Hub</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            background: url('img/interview.jpg') no-repeat center center fixed; 
+            background-size: cover;
+        }
+        #main-content {
+            min-height: calc(100% - 40px); 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         header {
             background-color: #123456;
@@ -22,12 +30,12 @@
             display: flex;
             justify-content: space-around;
             padding: 20px;
-            flex-wrap: wrap; 
+            flex-wrap: wrap;
         }
         .content-block {
-            background-color: #CCCCCC;
-            width: 30%; 
-            padding-bottom: 30%; 
+            background-color: rgba(204, 204, 204, 0.8); 
+            width: 30%;
+            padding-bottom: 30%;
             margin: 10px;
             position: relative;
         }
@@ -40,53 +48,52 @@
             text-align: center;
         }
         .content-block a {
-            color: #123456;
-            text-decoration: none;
-            display: block;
             position: absolute;
             width: 100%;
             height: 100%;
             top: 0;
             left: 0;
+            color: #123456;
+            text-decoration: none;
+            display: block;
         }
         footer {
             background-color: #123456;
             color: white;
             text-align: center;
             padding: 10px;
-            position: relative;
-            bottom: 0;
             width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Interview Experience Hub</h1>
-    </header>
+    <div id="main-content">
+        <header>
+            <h1>Interview Experience Hub</h1>
+        </header>
 
-    <div class="content-container">
-        <div class="content-block" id="salary">
-            <a href="#">
-                <h2>Salary</h2>
-            </a>
+        <div class="content-container">
+            <div class="content-block" id="salary">
+                <a href="#">
+                    <h2>Salary</h2>
+                </a>
+            </div>
+            
+            <div class="content-block" id="forum">
+                <a href="#">
+                    <h2>Forum</h2>
+                </a>
+            </div>
+            
+            <div class="content-block" id="interviews">
+                <a href="#">
+                    <h2>Interviews</h2>
+                </a>
+            </div>
         </div>
-        
-        <div class="content-block" id="forum">
-            <a href="#">
-                <h2>Forum</h2>
-            </a>
-        </div>
-        
-        <div class="content-block" id="interviews">
-            <a href="#">
-                <h2>Interviews</h2>
-            </a>
-        </div>
+        <footer>
+            <p>&copy; 2023 Interview Experience Hub</p>
+        </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2023 Interview Experience Hub</p>
-    </footer>
 </body>
 </html>
