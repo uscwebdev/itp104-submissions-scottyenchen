@@ -22,20 +22,32 @@
             display: flex;
             justify-content: space-around;
             padding: 20px;
+            flex-wrap: wrap; 
         }
         .content-block {
             background-color: #CCCCCC;
-            width: calc(33.333% - 40px);
+            width: 30%; 
+            padding-bottom: 30%; 
             margin: 10px;
-            padding: 20px;
+            position: relative;
+        }
+        .content-block h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
             text-align: center;
-            color: #123456;
         }
         .content-block a {
             color: #123456;
             text-decoration: none;
             display: block;
-            margin-top: 10px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
         }
         footer {
             background-color: #123456;
@@ -55,21 +67,21 @@
 
     <div class="content-container">
         <div class="content-block" id="salary">
-            <h2>Salary</h2>
-            <p>Discover and compare salaries for various positions across industries.</p>
-            <a href="#" class="content-link">Read More</a>
+            <a href="#">
+                <h2>Salary</h2>
+            </a>
         </div>
         
         <div class="content-block" id="forum">
-            <h2>Forum</h2>
-            <p>Join the discussion, share your experiences, and get advice.</p>
-            <a href="#" class="content-link">Join Discussion</a>
+            <a href="#">
+                <h2>Forum</h2>
+            </a>
         </div>
         
         <div class="content-block" id="interviews">
-            <h2>Interviews</h2>
-            <p>Read interviews and get prepared for your next job opportunity.</p>
-            <a href="#" class="content-link">Explore Interviews</a>
+            <a href="#">
+                <h2>Interviews</h2>
+            </a>
         </div>
     </div>
 
