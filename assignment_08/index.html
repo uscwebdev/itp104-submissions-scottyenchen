@@ -12,34 +12,25 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        .navbar {
+        header {
             background-color: #123456; 
             color: white;
-            padding: 10px 20px;
+            padding: 20px;
             text-align: center;
         }
-        .navbar a {
-            color: white;
-            padding: 14px 16px;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .section {
-            background-color: #ffffff;
-            margin: 10px 0;
-            padding: 20px;
-            border: 1px solid #dddddd;
+        .content-block {
+            background-color: #CCCCCC;
+            margin: 20px auto;
+            width: 80%;
+            padding: 40px 0;
+            text-align: center;
+            color: #123456; 
         }
         footer {
             background-color: #123456; 
             color: white;
             text-align: center;
-            padding: 10px 20px;
+            padding: 10px;
             position: relative;
             bottom: 0;
             width: 100%;
@@ -47,33 +38,23 @@
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#interviews">Interviews</a>
-        <a href="#forum">Forum</a>
-        <a href="#salary">Salary</a>
-    </nav>
+    <header>
+        <h1>Interview Experience Hub</h1>
+    </header>
 
-    <div class="container">
-        <section id="home" class="section">
-            <h1>Welcome to the Interview Experience Hub</h1>
-            <p>This is the home section where you can introduce the site and highlight recent interview experiences shared by users.</p>
-        </section>
-        
-        <section id="interviews" class="section">
-            <h2>Interview Experiences</h2>
-            <p>This section contains a repository of interview experiences and questions shared by users.</p>
-        </section>
-        
-        <section id="forum" class="section">
-            <h2>Discussion Forum</h2>
-            <p>Users can engage in discussions here, ask questions, and share advice.</p>
-        </section>
-        
-        <section id="salary" class="section">
-            <h2>Salary Comparisons</h2>
-            <p>Search and compare salaries for different roles across various companies.</p>
-        </section>
+    <div class="content-block" id="salary">
+        <h2>Salary</h2>
+        <p>Discover and compare salaries for various positions across industries.</p>
+    </div>
+    
+    <div class="content-block" id="forum">
+        <h2>Forum</h2>
+        <p>Join the discussion, share your experiences, and get advice.</p>
+    </div>
+    
+    <div class="content-block" id="interviews">
+        <h2>Interviews</h2>
+        <p>Read interviews and get prepared for your next job opportunity.</p>
     </div>
 
     <footer>
