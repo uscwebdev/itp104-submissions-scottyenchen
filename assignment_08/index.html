@@ -13,21 +13,32 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #123456; 
+            background-color: #123456;
             color: white;
             padding: 20px;
             text-align: center;
         }
+        .content-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
         .content-block {
             background-color: #CCCCCC;
-            margin: 20px auto;
-            width: 80%;
-            padding: 40px 0;
+            width: calc(33.333% - 40px);
+            margin: 10px;
+            padding: 20px;
             text-align: center;
-            color: #123456; 
+            color: #123456;
+        }
+        .content-block a {
+            color: #123456;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
         }
         footer {
-            background-color: #123456; 
+            background-color: #123456;
             color: white;
             text-align: center;
             padding: 10px;
@@ -42,19 +53,24 @@
         <h1>Interview Experience Hub</h1>
     </header>
 
-    <div class="content-block" id="salary">
-        <h2>Salary</h2>
-        <p>Discover and compare salaries for various positions across industries.</p>
-    </div>
-    
-    <div class="content-block" id="forum">
-        <h2>Forum</h2>
-        <p>Join the discussion, share your experiences, and get advice.</p>
-    </div>
-    
-    <div class="content-block" id="interviews">
-        <h2>Interviews</h2>
-        <p>Read interviews and get prepared for your next job opportunity.</p>
+    <div class="content-container">
+        <div class="content-block" id="salary">
+            <h2>Salary</h2>
+            <p>Discover and compare salaries for various positions across industries.</p>
+            <a href="#" class="content-link">Read More</a>
+        </div>
+        
+        <div class="content-block" id="forum">
+            <h2>Forum</h2>
+            <p>Join the discussion, share your experiences, and get advice.</p>
+            <a href="#" class="content-link">Join Discussion</a>
+        </div>
+        
+        <div class="content-block" id="interviews">
+            <h2>Interviews</h2>
+            <p>Read interviews and get prepared for your next job opportunity.</p>
+            <a href="#" class="content-link">Explore Interviews</a>
+        </div>
     </div>
 
     <footer>
