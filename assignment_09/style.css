@@ -32,8 +32,7 @@ header {
     width: 30%;
     margin: 10px;
     position: relative;
-    /* Ensure the content blocks are square */
-    padding-top: 30%; /* This percentage will be relative to the width */
+    padding-top: 30%;
     box-sizing: border-box;
 }
 
