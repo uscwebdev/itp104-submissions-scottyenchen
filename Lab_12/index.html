@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .photo-gallery {
+            text-align: center;
+        }
+
+        .photo {
+            display: inline-block;
+            position: relative;
+            margin: 10px;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+
+        .caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            visibility: hidden;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s;
+        }
+
+        .photo:hover .caption {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cars</h1>
+    <div class="photo-gallery">
+        <div class="photo">
+            <img src="img/cars.jpg" alt="Image 1">
+            <div class="caption">Cars Meet</div>
+        </div>
+
+        <div class="photo">
+            <img src="img/cars1.jpg" alt="Image 2">
+            <div class="caption">Bugatti</div>
+        </div>
+        <div class="photo">
+            <img src="img/mercedes.jpg" alt="Image 3">
+            <div class="caption">Mercedes AMG GT</div>
+        </div>
+        <div class="photo">
+            <img src="img/mercedes1.jpg" alt="Image 4">
+            <div class="caption">Mercedes E class Interior</div>
+        </div>
+        <div class="photo">
+            <img src="img/porsche1.jpg" alt="Image 5">
+            <div class="caption">Porsche Panamera</div>
+        </div>
+    </div>
+</body>
+</html>
