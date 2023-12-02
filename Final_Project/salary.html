@@ -7,14 +7,23 @@
     <title>Interview Experience Hub - Salary</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            color: #333;
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
-            background-color: #123456; 
+            background-color: #123456;
         }
-    
+
+        #main-content {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
         header, nav, main, footer {
             padding: 20px;
             text-align: center;
@@ -60,9 +69,11 @@
         }
 
         footer {
-            background-color: #fff; 
-            box-shadow: 0 -2px 5px rgba(0,0,0,0.1); 
-            margin-top: 20px;
+            background-color: #f8f8f8; 
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd; 
         }
     </style>
 </head>
@@ -114,7 +125,6 @@
                 <p>Average Salary: $60,000</p>
                 <p>High School Teachers shape the future by educating the next generation of students.</p>
             </section>
-
         </main>
 
         <footer>
