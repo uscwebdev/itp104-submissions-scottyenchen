@@ -51,6 +51,25 @@ footer {
     width: 100%;
 }
 
+nav.head {
+            background-color: #fff; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+            margin-bottom: 20px;
+        }
+
+        nav.head a.head-block {
+            display: inline-block;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+        }
+    
+        nav.head a.head-block:hover {
+            color: #003d82;
+        }
+    
+
 @media screen and (max-width: 600px) {
     .content-container {
         flex-direction: column;
