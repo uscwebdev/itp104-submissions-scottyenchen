@@ -9,6 +9,11 @@
         body {
             background-color: #f0f0f0; 
             color: #333; 
+            background-image: url('img/forum.jpg'); 
+            background-size: cover;
+            background-position: center; 
+            background-attachment: fixed; 
+
         }
         header {
             background-color: #123456; 
@@ -31,13 +36,63 @@
             background-color: #123456; 
             color: white;
         }
+        nav {
+        text-align: center; 
+        margin-bottom: 20px; 
+             }
+        .user-submission-form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #e6e6e6;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #123456;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff6600;
+        }
     </style>
+    <script>
+    function handleSubmit() {
+        event.preventDefault();
+        document.getElementById("submission-message").style.display = "block";
+        document.getElementById("submission-form").style.display = "none";
+        }
+    </script>
+
 </head>
 <body>
     <div id="main-content">
         <header>
             <h1>Interview Experience Hub</h1>
         </header>
+    <nav class="head">
+        <a href="index.html" class="head-block">Home</a>
+        <a href="salary.html" class="head-block">Salary</a>
+        <a href="forum.html" class="head-block">Forum</a>
+        <a href="interview.html" class="head-block">Interviews</a>
+    </nav>
 
         <main>
             <h2>Job Discussion Forum</h2>
@@ -58,6 +113,28 @@
                     </div>
                 </article>
             </section>
+            <section class="user-submission-form">
+                <h2>Share Your Thoughts</h2>
+                <form onsubmit="handleSubmit()">
+                    <div class="form-group">
+                        <label for="topic">Topic:</label>
+                        <input type="text" id="topic" name="topic" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="information">Information:</label>
+                        <textarea id="information" name="information" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <div id="submission-message" style="display: none;">
+                <p>Thank you! We've received your thoughts, we will review it and post it.</p>
+            </div>
+
         </main>
 
         <footer>
